@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/enter_email_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:padding="14dp"
+        android:textColor="@android:color/background_dark"
+        android:hint="shahbaz@gmail.com"
+        />
+
+    <EditText
+        android:id="@+id/enter_password_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:padding="14dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/enter_email_main"
+        android:hint="******"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_password_main"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signin_btn_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="SignIn"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/signup_btn_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="SignUp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgetpassword_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ForgetPassword?"
+        android:layout_weight="1"
+        android:padding="14dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/linear_layout_main"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgetpassword_link"
+        >
+
+        <EditText
+            android:id="@+id/forget_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter The Email"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/forget_pass_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="Reset Password"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_below="@id/forget_email_edit_text"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
